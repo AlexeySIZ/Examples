@@ -19,7 +19,7 @@ ASSUME N \in Nat \ {0}
 Attacks(queens,i,j) ==
   \/ queens[i] = queens[j]                 \** same column
   \/ queens[i] - queens[j] = i - j         \** first diagonal
-  \/ queens[j] - queens[i] = i - j         \** second diagonal
+  \/  queens[j] - queens[i] = i - j         \** second diagonal
 
 (* A placement represents a (partial) solution if no two different queens
    attack each other in it. *)
